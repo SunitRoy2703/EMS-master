@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="dialog_sheet_corner_radius">36dp</dimen>
+    <dimen name="state_views_icon_size">40dp</dimen>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/curve_bg">
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="50dp"
+            android:layout_marginTop="50dp"
+            android:elevation="100sp">
+            <io.armcha.elasticview.ElasticView
+                app:flexibility="10"
+                android:elevation="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/profilePhoto"
+        android:layout_width="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder"
+        />
+
+<TextView
+    android:id="@+id/name"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-black"
+    android:textColor="@color/textBlack"
+    android:layout_marginTop="30dp"
+    android:layout_toEndOf="@id/profilePhoto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/designation"
+        android:textSize="12sp"
+        android:layout_below="@id/name"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/textGrey"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/profilePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/department"
+        android:textSize="12sp"
+        android:layout_below="@id/designation"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/textGrey"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/profilePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+            </io.armcha.elasticview.ElasticView>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+    <com.google.android.material.button.MaterialButton
+        android:textColor="#ffffff"
+        android:elevation="80dp"
+        app:cornerRadius="@dimen/text_20sp"
+        android:backgroundTint="#ff6416"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:id="@+id/approveLeave"
+        android:layout_height="80dp"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:icon="@drawable/approve_leave"
+        android:text="@string/home_option_six" />
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:textColor="#ffffff"
+            app:cornerRadius="@dimen/text_20sp"
+            android:elevation="80dp"
+            android:layout_gravity="center_vertical"
+            app:rippleColor="@color/colorPrimaryDark"
+            android:backgroundTint="#ff6416"
+            android:textSize="12sp"
+            android:id="@+id/requestLeave"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            app:icon="@drawable/request_leave"
+            android:text="@string/home_option_two" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#ff6416"
+            android:elevation="80dp"
+            android:text="@string/home_option_four"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            app:cornerRadius="@dimen/text_20sp"
+            app:icon="@drawable/profile"
+            app:rippleColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:backgroundTint="#ff6416"
+            android:textSize="12sp"
+            app:rippleColor="@color/colorPrimaryDark"
+            android:textColor="#ffffff"
+            android:elevation="80dp"
+            app:cornerRadius="@dimen/text_20sp"
+            android:id="@+id/employeeList"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            app:icon="@drawable/employee_list"
+            android:text="@string/home_option_one" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:textColor="#ffffff"
+            android:elevation="80dp"
+            android:id="@+id/leaveHistory"
+            app:rippleColor="@color/colorPrimaryDark"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#ff6416"
+            android:textSize="12sp"
+            android:maxLines="3"
+            app:cornerRadius="@dimen/text_20sp"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            app:icon="@drawable/notice"
+            android:text="@string/home_option_five" />
+
+    </LinearLayout>
+    <LinearLayout
+
+
+        android:id="@+id/secondRow"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:textColor="#ffffff"
+            android:elevation="80dp"
+            app:cornerRadius="@dimen/text_20sp"
+            android:backgroundTint="#ff6416"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start"
+            android:layout_width="150dp"
+            android:id="@+id/logOut"
+            android:layout_height="80dp"
+            app:rippleColor="@color/colorPrimaryDark"
+            app:icon="@drawable/logout"
+            android:text="@string/home_option_three" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

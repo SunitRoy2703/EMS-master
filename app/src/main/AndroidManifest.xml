@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sunit.ems">
+
+    <!--Permissions-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--Application Tag-->
+    <application
+        android:fullBackupContent="false"
+        android:name="com.sunit.ems.EMS"
+        android:allowBackup="true"
+        android:icon="@mipmap/mainicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mainicon_round"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:theme="@style/AppTheme">
+        <!--NotificationMetaData-->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/pending"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <!--Notification Service-->
+        <service
+            android:name="com.sunit.ems.notification.MyFireBaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.sunit.ems.activities.MainActivity">
+
+        </activity>
+        <!--Launcher Activity-->
+        <activity
+            android:name="com.sunit.ems.activities.LoginActivity"
+            android:noHistory="true">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.sunit.ems.activities.ApplyLeave">
+
+        </activity>
+        <activity android:name="com.sunit.ems.activities.LeaveHistory"/>
+        <activity
+            android:noHistory="true"
+            android:name="com.sunit.ems.activities.UserData">
+
+        </activity>
+        <activity android:name="com.sunit.ems.activities.EmployeeList"/>
+        <activity android:name="com.sunit.ems.activities.ApproveLeave"/>
+
+
+    </application>
+
+</manifest>

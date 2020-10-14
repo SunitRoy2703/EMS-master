@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912847205145",
+    "firebase_url": "https://duly2-4c914.firebaseio.com",
+    "project_id": "duly2-4c914",
+    "storage_bucket": "duly2-4c914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912847205145:android:431950bb2dd59843e84b88",
+        "android_client_info": {
+          "package_name": "com.sunit.ems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912847205145-oco5e2rme2e3nl8veisn0bkv9ceeo78a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunit.ems",
+            "certificate_hash": "5a5ea7bac74983b5b88914203083c91deeccf41b"
+          }
+        },
+        {
+          "client_id": "912847205145-n5ff8d2gl2vmpcaciqr8fln9hvf80f7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHnKxKy4ivcAAnDCaLD17qA_zsvBKWKUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912847205145-n5ff8d2gl2vmpcaciqr8fln9hvf80f7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

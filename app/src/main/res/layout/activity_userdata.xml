@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:background="@color/mediumGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <in.codeshuffle.typewriterview.TypeWriterView
+
+        android:layout_margin="10sp"
+        android:id="@+id/typeWriterView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/textBlack"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/textInputLayout"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/textGrey"
+        app:boxStrokeColor="@color/colorAccent"
+        app:boxStrokeWidth="2dp"
+        android:layout_height="70dp"
+        android:hint="@string/hintOne">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/number"
+            android:maxLength="10"
+            android:textColor="@color/textBlack"
+            android:inputType="phone"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/textInputLayoutTwo"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/textGrey"
+        app:boxStrokeColor="@color/colorAccent"
+        app:boxStrokeWidth="2dp"
+        android:layout_height="70dp"
+        android:hint="@string/hintTwo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/designation"
+            android:textColor="@color/textBlack"
+            android:inputType="textCapWords"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+<androidx.cardview.widget.CardView
+    android:id="@+id/departments"
+    app:cardCornerRadius="@dimen/text_20sp"
+    android:elevation="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_unchecked"
+            android:layout_width="200dp"
+            android:layout_height="50dp">
+
+            <TextView
+
+                android:text="Department"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textBlack"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.llollox.androidprojects.compoundbuttongroup.CompoundButtonGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:entries="@array/departments"
+            app:numCols="2"
+            android:id="@+id/department"
+            app:labelOrder="after"
+            app:compoundType="radio"/>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/save"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <LinearLayout
+
+        android:gravity="center"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:textColor="@color/colorBackground"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

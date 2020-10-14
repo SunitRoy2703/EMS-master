@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.chip.Chip
+    android:id="@+id/clear"
+    style="@style/Widget.MaterialComponents.Chip.Action"
+    android:layout_width="wrap_content"
+    app:chipIcon="@drawable/clear"
+    app:chipIconTint="@color/colorBackground"
+    android:backgroundTint="@color/colorAccent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:textColor="@color/colorBackground"
+    android:layout_marginStart="@dimen/text_20sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:text="@string/designation"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/employee_list"
+            android:layout_below="@id/clear"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="781dp" />
+    </RelativeLayout>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_gravity="top|end"
+    android:layout_margin="10dp"
+    android:id="@+id/filter"
+    android:src="@drawable/filter"
+    app:backgroundTint="@color/colorBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

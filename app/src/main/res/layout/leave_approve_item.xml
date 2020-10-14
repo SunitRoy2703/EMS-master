@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/employeeDetails"
+        android:layout_margin="5dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_width="250dp"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/textBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/designation"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/textGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/department"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/textGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/textGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/startDate"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/endDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/call"
+                        android:textSize="15sp"
+                        android:text="@string/employee_list_option_one"
+                        app:icon="@drawable/call"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="5dp"
+                        android:layout_margin="5dp"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <TextView
+         android:text="@string/appliedBy"
+         android:layout_marginTop="5dp"
+         android:textSize="@dimen/text_20sp"
+         android:layout_marginStart="5dp"
+         android:textColor="@color/textGrey"
+         android:textStyle="bold"
+         android:id="@+id/appliedText"
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    <View
+        android:layout_below="@id/appliedText"
+        android:background="@color/textBlack"
+        android:layout_toStartOf="@id/employeeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+    <TextView
+        android:text="@string/reason"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/textGrey"
+        android:layout_below="@id/appliedText"
+        android:id="@+id/reasonText"
+        android:layout_marginEnd="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/reason"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_marginStart="@dimen/text_20sp"
+        android:textColor="@color/textGrey"
+        android:layout_below="@id/reasonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<View
+    android:layout_above="@id/timeStamp"
+    android:background="@color/textGrey"
+    android:layout_below="@id/reasonText"
+    android:layout_toStartOf="@id/employeeDetails"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"/>
+    <TextView
+        android:text="@string/appliedOn"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/textGrey"
+        android:textStyle="bold"
+        android:layout_above="@id/timeStamp"
+        android:id="@+id/appliedOnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/timeStamp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@color/textGrey"
+        android:layout_below="@id/employeeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/dayCount"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_below="@id/employeeDetails"
+        android:textColor="@color/textGrey"
+        android:layout_toEndOf="@id/timeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/accept"
+        android:src="@drawable/accept"
+        app:backgroundTint="@color/colorBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/reject"
+        android:layout_marginEnd="75dp"
+        app:elevation="1000dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/reject"
+        app:backgroundTint="@color/colorBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
