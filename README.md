@@ -15,5 +15,6 @@ HR management native android app using Firebase.
            
 Uses FireBase Authentication, FireBaseUI for UI libraries, FireBaseStorage for storing images, FireBaseFireStore for storing data and FireBaseCloudMessaging for notifications.
 
-APK link :- https://drive.google.com/open?id=1It34xC7A-5u4oaLDqfr0aHZWhRzYZLwc
+APK link :- https://drive.google.com/file/d/1FnWNhXaW5qSByQGQA2nunpvqkN6tFn7Q/
+view?usp=sharing
 
